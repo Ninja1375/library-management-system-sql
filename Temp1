@@ -1900,8 +1900,7 @@ ul, li {
 
         </code></pre>
     </div>
-<p><b>3° Passo:</b>
- Copie o código abaixo e cole na pasta "script.js".
+<h3>Passo 3: Adicionando Funcionalidade com JavaScript</h3><p>Crie um arquivo chamado <code style="background-color: #eeeeee;">script.js</code> e adicione o seguinte código para tornar o cartão interativo:</p>
     <div class="code-container">
         <div class="buttons">
             <button class="ident">JavaScript</button>
