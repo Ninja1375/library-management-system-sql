@@ -648,8 +648,7 @@
 
         </code></pre>
     </div>
-<p><b>2° Passo:</b>
-Copie o código abaixo e cole na pasta "style.css".</p>
+<h3>Passo 2: Estilizando com CSS</h3><p>Crie um arquivo chamado <code style="background-color: #eeeeee;">style.css</code> e adicione o seguinte código para estilizar o cartão:</p>
     <div class="code-container">
         <div class="buttons">
             <button class="ident">CSS</button>
