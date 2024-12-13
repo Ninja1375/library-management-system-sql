@@ -43,3 +43,32 @@ O banco de dados possui as seguintes tabelas:
    JOIN Emprestimos e ON l.id_livro = e.id_livro
    GROUP BY l.titulo
    ORDER BY total_emprestimos DESC;
+
+Membros com mais empréstimos:
+
+sql
+
+Copiar código
+
+SELECT m.nome, COUNT(e.id_emprestimo) AS total_emprestimos FROM Membros m JOIN Emprestimos e ON m.id_membro = e.id_membro GROUP BY m.nome ORDER BY total_emprestimos DESC; 
+
+Livros disponíveis na biblioteca:
+
+sql
+
+Copiar código
+
+SELECT * FROM Livros WHERE disponibilidade = 1; 
+
+Livros emprestados atualmente:
+
+sql
+
+Copiar código
+
+SELECT l.titulo, m.nome, e.data_emprestimo FROM Emprestimos e JOIN Livros l ON e.id_livro = l.id_livro JOIN Membros m ON e.id_membro = m.id_membro WHERE e.data_devolucao IS NULL; 
+
+🚀 Como UsarCrie o banco de dados no seu sistema de gerenciamento de banco de dados (MySQL, PostgreSQL, etc.).Execute o script create_tables.sql para criar as tabelas.Execute o script insert_data.sql para adicionar dados iniciais.Use as consultas em queries.sql para explorar os dados.📚 Sobre o Projeto
+
+Este projeto é ideal para quem está aprendendo SQL e deseja praticar suas habilidades.
+Sinta-se à vontade para sugerir melhorias ou contribuir com novos recursos!
