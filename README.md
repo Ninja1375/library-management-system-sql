@@ -61,7 +61,11 @@ O banco de dados possui as seguintes tabelas:
 4. **Livros emprestados atualmente:**
 
    ```sql
-   SELECT l.titulo, m.nome, e.data_emprestimo FROM Emprestimos e JOIN Livros l ON e.id_livro = l.id_livro JOIN Membros m ON e.id_membro = m.id_membro WHERE e.data_devolucao IS NULL; 
+   SELECT l.titulo, m.nome, e.data_emprestimo
+   FROM Emprestimos e
+   JOIN Livros l ON e.id_livro = l.id_livro
+   JOIN Membros m ON e.id_membro = m.id_membro
+   WHERE e.data_devolucao IS NULL; 
 
 ## 🚀 Como Usar
 
