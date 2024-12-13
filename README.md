@@ -47,7 +47,11 @@ O banco de dados possui as seguintes tabelas:
 2. **Membros com mais empréstimos:**
 
    ```sql
-   SELECT m.nome, COUNT(e.id_emprestimo) AS total_emprestimos FROM Membros m JOIN Emprestimos e ON m.id_membro = e.id_membro GROUP BY m.nome ORDER BY total_emprestimos DESC; 
+   SELECT m.nome, COUNT(e.id_emprestimo) AS total_emprestimos
+FROM Membros m
+JOIN Emprestimos e ON m.id_membro = e.id_membro
+GROUP BY m.nome
+ORDER BY total_emprestimos DESC;
 
 3. **Livros disponíveis na biblioteca:**
 
