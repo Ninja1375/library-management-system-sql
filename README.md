@@ -81,3 +81,7 @@ O banco de dados possui as seguintes tabelas:
 
 Este projeto é ideal para quem está aprendendo SQL e deseja praticar suas habilidades.
 Sinta-se à vontade para sugerir melhorias ou contribuir com novos recursos!
+
+## linguagem Utilizada ##
+
+<a href="https://programartudo.blogspot.com/2024/11/sql-manipulacao-e-gerenciamento-de-dados.html" target="_blank"><img loading="lazy" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="70" height="70"/></a>
